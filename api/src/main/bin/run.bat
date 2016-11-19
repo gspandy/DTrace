@@ -1,0 +1,1 @@
+java -cp .\conf -Djava.ext.dirs=.\lib  com.kaiyuan.dfb.mobilecenter.MobileApi

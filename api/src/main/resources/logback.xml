@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                .%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36}:%line - %msg %n
+            </pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+        </encoder>
+    </appender>
+
+    <!-- 演示按时间滚动的策略 -->
+    <appender name="file—monitor" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/dtrace-monitor.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>logs/dtrace-monitor.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!-- 保留 30天数据，默认无限-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35}:%line - %msg %n</Pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+        </encoder>
+    </appender>
+
+    <logger name="monitor" additivity="true">
+        <appender-ref ref="file—monitor"/>
+    </logger>
+    <!--<root>-->
+        <!--<level value="INFO"/>-->
+        <!--<appender-ref ref="consoleAppender"/>-->
+        <!--<appender-ref ref="file—monitor"/>-->
+    <!--</root>-->
+</configuration>
