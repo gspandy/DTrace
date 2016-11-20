@@ -10,11 +10,11 @@
 	</appender>
 	
 	<!-- 演示按时间滚动的策略 -->
-  	<appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/mobilecenter-core.log</File>
+  	<appender name="file2—monitor" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>logs/monitor-core.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 		    <!-- daily rollover -->
-			<FileNamePattern>logs/mobilecenter-core.%d{yyyy-MM-dd}.log</FileNamePattern>
+			<FileNamePattern>logs/monitor-core.%d{yyyy-MM-dd}.log</FileNamePattern>
 			<!-- 保留 30天数据，默认无限-->
 			<maxHistory>30</maxHistory>			
 		</rollingPolicy>
@@ -23,9 +23,12 @@
 			<charset>UTF-8</charset> <!-- 此处设置字符集 -->
 		</encoder> 	    
   	</appender>
-	<root>
-		<level value="DEBUG" />
-		<appender-ref ref="consoleAppender" />
-		<appender-ref ref="dailyRollingFileAppender"/>
-	</root>
+	<logger name="monitor" additivity="true">
+		<appender-ref ref="file2—monitor"/>
+	</logger>
+	<!--<root>-->
+		<!--<level value="DEBUG" />-->
+		<!--<appender-ref ref="consoleAppender" />-->
+		<!--<appender-ref ref="dailyRollingFileAppender"/>-->
+	<!--</root>-->
 </configuration>

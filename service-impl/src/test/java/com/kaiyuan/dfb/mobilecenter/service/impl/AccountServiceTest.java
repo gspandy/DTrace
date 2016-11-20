@@ -1,6 +1,7 @@
 package com.kaiyuan.dfb.mobilecenter.service.impl;
 
 import com.kaiyuan.dfb.mobilecenter.service.AccountService;
+import com.kaiyuan.dfb.usercenter.service.UserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,6 +24,9 @@ public class AccountServiceTest {
     @Resource
     private AccountService accountService;
 
+    @Resource
+    private UserService userService;
+
     @Test
     public void getAccountByUserId() throws Exception {
         String userId = "6e502423-86cb-483c-97c9-8a1dc25dc971";
@@ -30,5 +34,8 @@ public class AccountServiceTest {
         Assert.assertNotNull(accountDOs);
     }
 
-
+    @Test
+    public void t(){
+        userService.getAccountByUserId("1111");
+    }
 }

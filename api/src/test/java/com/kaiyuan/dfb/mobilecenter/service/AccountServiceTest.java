@@ -24,6 +24,6 @@ public class AccountServiceTest {
     public void getAccountByUserId() throws Exception {
         String userId = "6e502423-86cb-483c-97c9-8a1dc25dc971";
         List<String> accountDOs = accountService.getAccountByUserId(userId);
-        Assert.assertNull(accountDOs);
+        Assert.assertNotNull(accountDOs);
     }
 }
