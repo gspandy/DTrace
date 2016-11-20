@@ -12,21 +12,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>model-mobile</artifactId>
-        </dependency>
+
+
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>common-mobile</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.platform.common</groupId>
-            <artifactId>common-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.platform.common</groupId>
-            <artifactId>common-message</artifactId>
-        </dependency>
+
     </dependencies>
 </project>

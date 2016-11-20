@@ -1,8 +1,5 @@
 package com.kaiyuan.dfb.mobilecenter.service;
 
-import com.kaiyuan.dfb.mobilecenter.model.account.AccountDO;
-import com.kaiyuan.platform.dfb_transaction.model.goods.Goods;
-import com.kaiyuan.platform.dfb_transaction.service.goods.GoodsService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +23,7 @@ public class AccountServiceTest {
     @Test
     public void getAccountByUserId() throws Exception {
         String userId = "6e502423-86cb-483c-97c9-8a1dc25dc971";
-        List<AccountDO> accountDOs = accountService.getAccountByUserId(userId);
-        Assert.assertNotNull(accountDOs);
+        List<String> accountDOs = accountService.getAccountByUserId(userId);
+        Assert.assertNull(accountDOs);
     }
 }

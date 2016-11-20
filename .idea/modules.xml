@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/api-mobile.iml" filepath="$PROJECT_DIR$/api/api-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-mobile.iml" filepath="$PROJECT_DIR$/common/common-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core-mobile.iml" filepath="$PROJECT_DIR$/core/core-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dao/dao-mobile.iml" filepath="$PROJECT_DIR$/dao/dao-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobilecenter.iml" filepath="$PROJECT_DIR$/mobilecenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model/model-mobile.iml" filepath="$PROJECT_DIR$/model/model-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-impl/service-impl-mobile.iml" filepath="$PROJECT_DIR$/service-impl/service-impl-mobile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service-mobile.iml" filepath="$PROJECT_DIR$/service/service-mobile.iml" />
+    </modules>
+  </component>
+</project>

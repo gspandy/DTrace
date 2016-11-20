@@ -20,27 +20,12 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>common-mobile</artifactId>
         </dependency>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>model-mobile</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>service-mobile</artifactId>
         </dependency>
-        <!--common-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-collections4</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.dfb.dfb-common</groupId>
-            <artifactId>common</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.dfb.dfb-common</groupId>
-            <artifactId>util</artifactId>
-        </dependency>
+
         <!--dubbo-->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -65,24 +50,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>1.3.5.RELEASE</version>
         </dependency>
-        <!--&lt;!&ndash;fastjson&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>com.alibaba</groupId>-->
-        <!--<artifactId>fastjson</artifactId>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;jackson&ndash;&gt;-->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -106,34 +74,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
-        <!-- fileupload -->
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.platform.common</groupId>
-            <artifactId>common-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.platform.common</groupId>
-            <artifactId>common-message</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.dfb</groupId>
-            <artifactId>dfb-billing-service</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.kaiyuan.platform.dfb_transaction</groupId>
-            <artifactId>service</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>net.sf.json-lib</groupId>
-            <artifactId>json-lib</artifactId>
-            <version>2.4</version>
-            <classifier>jdk15</classifier>
-            <scope>test</scope>
-        </dependency>
+
     </dependencies>
     <build>
         <plugins>
